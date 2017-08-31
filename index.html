@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Travel Express</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>   
+<script type="text/javascript" src="javascript.js"></script>
+</head>
+
+<body>
+<header><h1>Travel Express</h1></header>
+<br/>
+
+<div class=" tab wrapper">
+  <button id="flightButton" class="tablinks">Flight</button>
+  <button id="hotelButton" class="tablinks">Hotel</button>
+</div>
+<br/>
+<div id="flight">
+<div class="wrapper tabcontent">
+<form>
+
+<ul>
+  <li>
+    <input type="radio" id="f-option" name="selector">
+    <label for="f-option">Return</label>
+    <div class="check"></div>
+  </li>
+  
+  <li>
+    <input type="radio" id="s-option" name="selector">
+    <label for="s-option">One Way Trip</label>
+    <div class="check"><div class="inside"></div></div>
+  </li>
+</ul>
+
+
+<p class="text-info">
+<span>Flying From</span>
+<span>Flying To</span>
+</p>
+<input id="flyingFrom" class="inputBoxs" type="text" placeholder="City Or Airport">
+<input id="flyingTo" class="inputBoxs" type="text" placeholder="City Or Airport">
+<br/>
+<p class="text-info">
+<span>Departure</span>
+<span>Returning</span>
+</p>
+<input class="datePicker" type="date" name="departuredate" id="datepickerId">
+<input class="datePicker" type="date" name="returningdate" id="datepickerId">
+
+<p class="text-info">
+<span>Adults(18+)</span>
+<span>Child(1-17)</span>
+</p>
+
+
+<select id="adults">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+</select>
+
+<select id="children">
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+</select>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button id="searchButton" class="selectButton">Search</button>
+</form>
+</div>
+</div>
+<div id="hotel">
+<div class="wrapper tabcontent">
+<form>                  
+<p >Going to</p>
+<input class="inputBoxs" type="text" placeholder="Destination,Airport,Railway Station,Landmark">
+<br/>
+<p class="text-info">
+<span>Check In</span>
+<span>Check Out</span>
+</p>
+<input class="datePicker" type="date" name="checkindate" id="datepickerId">
+<input class="datePicker" type="date" name="checkoutdate" id="datepickerId">
+<p>
+<span>Rooms</span>
+<span>Adults(18+)</span>
+<span>Children(0-17)</span>
+</p>
+
+<select id="rooms">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9+</option>
+</select>
+<select id="adults">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+</select>
+
+<select id="children">
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+</select>
+<br/>
+<br/>
+<br/>
+
+<button id="searchButton" class="selectButton">Search</button>
+
+</form>
+</div>      
+</div>                            
+</div>
+</div>
+</body>
+</html>
